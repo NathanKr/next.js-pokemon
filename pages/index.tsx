@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Link href='/pokemons'>
-        <a>Click here to navigate to products page</a>
+        <a>Click here to navigate to pokemons page</a>
       </Link>
     </div>
   );

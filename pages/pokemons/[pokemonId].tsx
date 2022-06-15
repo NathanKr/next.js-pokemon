@@ -34,8 +34,8 @@ const PokemonDetails = () => {
     return <div>Details are undefined ........</div>;
   }
 
-  const statsElem = pokemonDetails.stats.map((it) => (
-    <tr>
+  const statsElem = pokemonDetails.stats.map((it,i) => (
+    <tr key={i}>
       <td>{it.name}</td>
       <td>{it.value}</td>
     </tr>
@@ -52,7 +52,7 @@ const PokemonDetails = () => {
   const imgUrl = `/${pokemonDetails.image}`;
   return (
     <div className={styles.PokemonDetails}>
-      <img src={imgUrl} alt="details" />
+      <img src={imgUrl} alt="image" />
       <div>
         <h3>{pokemonDetails.name}</h3>
         <p>{pokemonDetails.type}</p>

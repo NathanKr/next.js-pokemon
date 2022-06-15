@@ -25,7 +25,7 @@ const Pokemons = () => {
       <Link href={`/pokemons/${pokemon.id}`}>
         <div>
           {/* might use Image of next */}
-          <img src={pokemon.image} alt="" />
+          <img src={pokemon.image} alt="image" />
           <h5>{pokemon.name}</h5>
         </div>
       </Link>
@@ -34,6 +34,7 @@ const Pokemons = () => {
 
   return (
     <div className={styles.Pokemons}>
+      <h2>Click the pokemon image to get details</h2>
       <main className={styles.gridPokemons}>{elems}</main>
     </div>
   );

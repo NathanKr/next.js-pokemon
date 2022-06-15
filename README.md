@@ -2,6 +2,13 @@
 Play with data fetching according to <a href='https://www.youtube.com/watch?v=kdXKz1UWc3E'>this</a>
 
 
+<h2>rendering</h2>
+<h3>client side rendering</h3>
+the view is created on the client e.g. <p>in PokemonDetails : the json is fetched from the AWS server and rendered on the client. We wait on the client for the data to come - we use fetch and useEffect and after we get the json we render it</p>
+<p>the same is in Pokemons : we fetch the json from the AWS server and render on the client</p>
+
+
+
 <h2>json to interface</h2>
 https://jherr-pokemon.s3.us-west-1.amazonaws.com/pokemon/1.json
 
